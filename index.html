@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Colour App</title>
+	<style>
+		*{font-size:50px;font-family:cambria;}
+		body{background-color:azure;}
+	</style>
+	</head>
+	<body>
+		<center>
+			<h1>Colour App</h1>
+			<form onsubmit="color()">
+		<input type="submit" value="Red">
+		<input type="submit" value="Green">
+		<input type="submit" value="Blue">
+		</form>
+		<h2 id="msg"/>
+		
+		<script>
+			function color()
+				{
+					event.preventDefault();
+					let action =document.activeElement.value;
+					if(action==="Red")
+					{
+						document.body.style.backgroundColor ="red";
+					}
+					
+					if(action==="Green")
+					{
+						document.body.style.backgroundColor ="green";
+					}
+					
+					if(action==="Blue")
+					{
+						document.body.style.backgroundColor ="blue";
+					}
+
+				
+				}
+		</script>
+		</center>
+
+	</body>
+
+</html>
